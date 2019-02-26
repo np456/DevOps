@@ -23,26 +23,21 @@
       }
     }
   },
-  "variables": {
-    "storageAccountName": "[concat('store', uniquestring(resourceGroup().id))]"
-  },
   "resources": [
     {
       "type": "Microsoft.Storage/storageAccounts",
-      "name": "[variables('storageAccountName')]",
+      "name": "[concat(copyIndex(), 'storage', uniqueString(resourceGroup().id))]",
       "location": "[parameters('location')]",
       "apiVersion": "2018-07-01",
       "sku": {
         "name": "[parameters('storageAccountType')]"
       },
       "kind": "StorageV2",
-      "properties": {}
+      "properties": {},
+      "copy": {
+        "name": "storagecopy",
+        "count": 3
+      }
     }
-  ],
-  "outputs": {
-    "storageAccountName": {
-      "type": "string",
-      "value": "[variables('storageAccountName')]"
-    }
-  }
+  ]
 }

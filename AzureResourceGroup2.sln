@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "AzureResourceGroup2", "AzureResourceGroup2\AzureResourceGroup2.deployproj", "{D6395490-055B-4D88-8EDF-5F7E27BA4703}"
+Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "CreateMultipleInstances", "AzureResourceGroup2\CreateMultipleInstances.deployproj", "{D6395490-055B-4D88-8EDF-5F7E27BA4703}"
+EndProject
+Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "DeployWindowsVM", "DeployWindowsVM\DeployWindowsVM.deployproj", "{D25ECBC3-0DA2-443A-9591-C374A8E258E2}"
+EndProject
+Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "CreateLinkedTemplates", "CreateLinkedTemplates\CreateLinkedTemplates.deployproj", "{D4C58B5F-C2DB-455C-9B1F-DD8A3B9243A6}"
+EndProject
+Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "LinkTempVNPeering", "LinkTempVNPeering\LinkTempVNPeering.deployproj", "{9F18D47C-8659-436D-A75F-9A58F4B15627}"
+EndProject
+Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "vnet-peering", "vnet-peering\vnet-peering.deployproj", "{D2AB90DE-69D6-491A-940C-07517548B69C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +23,22 @@ Global
 		{D6395490-055B-4D88-8EDF-5F7E27BA4703}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6395490-055B-4D88-8EDF-5F7E27BA4703}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6395490-055B-4D88-8EDF-5F7E27BA4703}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D25ECBC3-0DA2-443A-9591-C374A8E258E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D25ECBC3-0DA2-443A-9591-C374A8E258E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D25ECBC3-0DA2-443A-9591-C374A8E258E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D25ECBC3-0DA2-443A-9591-C374A8E258E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4C58B5F-C2DB-455C-9B1F-DD8A3B9243A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4C58B5F-C2DB-455C-9B1F-DD8A3B9243A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4C58B5F-C2DB-455C-9B1F-DD8A3B9243A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4C58B5F-C2DB-455C-9B1F-DD8A3B9243A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F18D47C-8659-436D-A75F-9A58F4B15627}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F18D47C-8659-436D-A75F-9A58F4B15627}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F18D47C-8659-436D-A75F-9A58F4B15627}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F18D47C-8659-436D-A75F-9A58F4B15627}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2AB90DE-69D6-491A-940C-07517548B69C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2AB90DE-69D6-491A-940C-07517548B69C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2AB90DE-69D6-491A-940C-07517548B69C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2AB90DE-69D6-491A-940C-07517548B69C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
