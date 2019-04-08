@@ -37,6 +37,7 @@
     <None Include="Spoke-VNet.json" />
     <None Include="VDC-Networking-Master.json" />
     <None Include="vdc-vnets.json" />
+    <None Include="vdc_script\DeployVDCNetworking.ps1" />
     <None Include="VNet-Peering-Hub.json" />
     <None Include="VNet-Peering-Spoke.json" />
     <None Include="vpn-gw.json" />
