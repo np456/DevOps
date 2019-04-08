@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>817226f7-9a1b-4df2-8c0c-35cca4f9ba4c</ProjectGuid>
+    <ProjectGuid>c411d8a4-677a-41c7-8889-58277bf990fd</ProjectGuid>
   </PropertyGroup>
   <PropertyGroup>
     <PrepareForBuildDependsOn>
@@ -23,10 +23,23 @@
   <Import Condition=" Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Deployment\1.1\DeploymentProject.targets') " Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Deployment\1.1\DeploymentProject.targets" />
   <!-- vertag<:>end -->
   <ItemGroup>
+    <Content Include="azuredeploy.parameters.json" />
+    <None Include="Deploy-NVAs.json" />
     <None Include="Deployment.targets">
       <Visible>False</Visible>
     </None>
     <Content Include="Deploy-AzureResourceGroup.ps1" />
+    <Content Include="README.md" />
+    <None Include="Hub-VNet.json" />
+    <None Include="MultiVM-LoadBalanced.json" />
+    <None Include="naming-policy.json" />
+    <None Include="Single-VM.json" />
+    <None Include="Spoke-VNet.json" />
+    <None Include="VDC-Networking-Master.json" />
+    <None Include="vdc-vnets.json" />
+    <None Include="VNet-Peering-Hub.json" />
+    <None Include="VNet-Peering-Spoke.json" />
+    <None Include="vpn-gw.json" />
   </ItemGroup>
   <Target Name="GetReferenceAssemblyPaths" />
 </Project>

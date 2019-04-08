@@ -2,7 +2,7 @@
    "$schema":"https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
    "contentVersion":"1.0.0.0",
    "parameters":{
-      "windowsOSVersion":{
+      "winVmOSVersion":{
          "type":"string",
          "defaultValue":"2016-Datacenter",
          "metadata":{
@@ -19,19 +19,19 @@
       "winVmUser":{
          "type":"string",
          "metadata":{
-            "description":"Username for Windows jump-host VM"
+            "description":"Admin username for Windows jump-host VM"
          }
       },
       "winVmPassword":{
          "type":"securestring",
          "metadata":{
-            "description":"Password for Windows jump-host VM. The password must be between 6-72 characters long and must satisfy at least 3 of password complexity requirements from the following: 1) Contains an uppercase character 2) Contains a lowercase character 3) Contains a numeric digit 4) Contains a special character 5) Control characters are not allowed"
+            "description":"Admin password for Windows jump-host VM. The password must be between 6-72 characters long and must satisfy at least 3 of password complexity requirements from the following: 1) Contains an uppercase character 2) Contains a lowercase character 3) Contains a numeric digit 4) Contains a special character 5) Control characters are not allowed"
          }
       },
       "winVmDnsPrefix":{
          "type":"string",
          "metadata":{
-            "description":"DNS Label for Windows jump-host VM."
+            "description":"DNS Label prefix for Windows jump-host VM."
          }
       },
       "deployVpnGateway":{

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "keyVaultName": {
+      "value": "aukv"
+    },
+    "objectId": {
+      "value": "0b9ae0f0-1935-4b53-8be9-6a27d9a1ff79"
+    },
+    "enabledForDeployment": {
+      "value": false
+    },
+    "enabledForTemplateDeployment": {
+      "value": false
+    },
+    "secretsObject": {
+      "value": ""
+    }
+  }
+}
